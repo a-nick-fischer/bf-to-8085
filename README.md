@@ -1,5 +1,7 @@
 ### Brainf*ck to 8085 Assembler compiler written in Red
 ---
+#### Note:
+It's originally based on: https://gist.github.com/dockimbel/7713170
 
 #### Examples:
 `5 * 10` in BF 
