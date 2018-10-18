@@ -51,12 +51,12 @@ Many 8085 emulators / assemblers have different comment line starts, you can cho
 ```
 bf/comment-start {... code goes here ...} ";"
 ```
-On the other hand, the online interpreter [sim8085](https://www.sim8085.com/) **allow** you to include a preceeding space, to enchant readability.
+On the other hand, the online interpreter [sim8085](https://www.sim8085.com/) **allows** you to include a preceeding space, to enchant readability.
 
 Furthermore, some emulators / assemblers interpret a number followed by a `h` as a label, so only decimal addresses and numbers are used here. 
 
 #### I / O:
-Port 1, and currently only Port 1 is used as the Input / Output or the program (`,` and `.` in BF). The compiled program **does not** wait until input "is available". This behaiviour may improve in the future, but feel free to submit a PR if you want it :P.
+Port 1, and currently only Port 1 is used as the Input / Output of the program (`,` and `.` in BF). The compiled program **does not** wait until input "is available". This behaiviour may improve in the future, but feel free to submit a PR if you want it earlier :P.
 
 #### How it works:
 The compiler matches the BF code against a set of rules, and generates the mnemonics (You didn't expect this, did you? :P). On program execution, changes are always first performed on registers and then written to RAM on pointer move (`>` and `<`).
